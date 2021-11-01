@@ -1,0 +1,27 @@
+.MemeCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+.MemeCard-topText {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+.MemeCard-bottomText {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25%;
+}
