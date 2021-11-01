@@ -2,6 +2,7 @@ import React from "react";
 import MemeCard from "./MemeCard";
 import { useSelector } from "react-redux";
 import "./MemeContainer.css";
+import { v4 as uuid } from "uuid";
 
 const MemeContainer = () => {
     const memes = useSelector(store => store.memes);
@@ -10,6 +11,7 @@ const MemeContainer = () => {
                                                                                             bottomText={bottomText}
                                                                                             imageUrl={imageUrl}
                                                                                             textColor={textColor}
+                                                                                            key={uuid()}
                                                                                           />);
     
     return (
